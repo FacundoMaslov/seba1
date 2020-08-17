@@ -1,0 +1,73 @@
+.divForm {
+  background-color: white;
+  border: solid rgb(35, 121, 201);
+  padding: 20px;
+  width: 600px;
+  height: 340px;
+  border-radius: 15px;
+
+  &_title {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: arial;
+  }
+
+  &_text {
+    padding-top: 20px;
+
+    &_input {
+      border: 0;
+      height: 30px;
+      border-bottom: 2px solid gray;
+      outline-style: none;
+      font-size: 20px;
+      border-color: rgb(91, 127, 161);
+      width: 170px;
+    }
+
+    &_input:focus {
+      border-color: #12ba88;
+    }
+  }
+
+  &_textArea {
+    padding-top: 20px;
+
+    &_input {
+      border: 0;
+      width: 585px;
+      border-bottom: 2px solid gray;
+      outline-style: none;
+      font-size: 20px;
+      border-color: rgb(91, 127, 161);
+      letter-spacing: 0;
+    }
+
+    &_input:focus {
+      border-color: #12ba88;
+    }
+  }
+
+  &_divButton {
+    padding-top: 10px;
+    padding-left: 492px;
+
+    &_button {
+      height: 40px;
+      width: 100px;
+      border-color: rgb(35, 121, 201);
+      background-color: rgb(35, 121, 201);
+      border-radius: 5px;
+      outline-style: none;
+      font-size: 20px;
+      color: white;
+      border: solid;
+      cursor: pointer;
+    }
+
+    &_button:active {
+      background-color: rgb(35, 121, 201);
+      opacity: 85%;
+    }
+  }
+}

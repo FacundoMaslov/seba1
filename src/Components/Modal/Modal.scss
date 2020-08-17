@@ -1,0 +1,13 @@
+.div2 {
+  position: relative;
+  z-index: 20;
+  left: 50%;
+  top: 48%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  color: blue;
+}
+
+.div2:focus {
+  color: red;
+}

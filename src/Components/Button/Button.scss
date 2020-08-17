@@ -1,0 +1,38 @@
+.grid_container_button {
+  display: grid;
+  min-height: 100%;
+}
+
+.grid_container_button_item {
+  display: flex;
+  min-height: 100%;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin-right: 10%;
+}
+
+.button1 {
+  height: 60px;
+  width: 70px;
+
+  color: rgb(23, 127, 161);
+  font-size: 60px;
+  border-radius: 15px;
+  border: 2px solid rgb(35, 121, 201);
+  box-shadow: 0 0 3px 0 #ddd;
+  outline: none;
+  cursor: pointer;
+
+  z-index: 51;
+}
+
+.button1:active {
+  background-color: rgb(35, 121, 201);
+}
+
+#logoButton {
+  font-size: 45px;
+  position: relative;
+  top: -10px;
+  z-index: 50;
+}
