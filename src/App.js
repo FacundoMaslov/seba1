@@ -28,7 +28,7 @@ function App() {
         <Header />
       </div>
       <div className="grid_principal_child">
-        <ListTweet allTweets={allTweets} closeModal={closeModal} />
+        {modalOpen === false && <ListTweet allTweets={allTweets} closeModal={closeModal} />}
       </div>
       <div className="grid_principal_child">
         <Button setModal={setModal} modalOpen={modalOpen} />

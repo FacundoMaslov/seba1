@@ -8,15 +8,13 @@ const ListTweet = (props) => {
   return (
     <div className="grid-container" onClick={closeModal}>
       {allTweets &&
-        Object.values(allTweets)
-          // .slice(0, 3)
-          .sort((a, b) => (a.id > b.id ? 1 : -1))
-
+        allTweets
+          .reverse()
+          .slice(0, 6)
           .map((tweet, index) =>
-            // <div className="grid-item" key={index}>
-            //   <Tweet tweet={tweet} index={index} />
-            // </div>
-            console.log(tweet)
+            <div className="grid-item" key={index}>
+              <Tweet tweet={tweet} index={index} />
+            </div>
           )}
     </div>
   );
